@@ -1,17 +1,20 @@
 <?php
 namespace GDO\Geo2Country\Method;
 
-use GDO\Core\Method;
+use GDO\Core\WithRateLimit;
 use GDO\CountryCoordinates\Method\Detect;
 
 /**
  * A wrapper for the detection api that does not require permissions.
  * @author gizmore
  */
-final class Api extends Method
+final class Api extends Detect
 {
-    public function execute()
-    {
-        return Detect::make()->execute();
-    }
+	use WithRateLimit;
+	
+	public function getPermission() : ?string
+	{
+		return null;
+	}
+
 }

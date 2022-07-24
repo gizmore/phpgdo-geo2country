@@ -11,7 +11,7 @@ use GDO\UI\GDT_Page;
  * @link https://geo2country.gizmore.org
  * 
  * @author gizmore
- * @version 7.0.0
+ * @version 7.0.1
  * @since 6.6.0
  */
 final class Module_Geo2Country extends GDO_Module
@@ -23,9 +23,14 @@ final class Module_Geo2Country extends GDO_Module
 	public function getDependencies() : array
 	{
 	    return [
+	    	'Admin',
+	    	'Classic',
 	    	'CountryCoordinates',
-	    	'Material',
+	    	'FontAwesome',
+	    	'Login',
 	    	'News',
+	    	'Register',
+	    	'Recovery',
 	    ];
 	}
     
@@ -33,7 +38,7 @@ final class Module_Geo2Country extends GDO_Module
     
     public function onInitSidebar() : void
     {
-        GDT_Page::$INSTANCE->topNav->addField(
+        GDT_Page::instance()->topBar()->addField(
             GDT_Link::make('link_geo2ctry_try_api')->href(
                 href('Geo2Country', 'TryApi')));
     }
