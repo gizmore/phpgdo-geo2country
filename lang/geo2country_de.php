@@ -19,4 +19,7 @@ Sie können auch Ihr Land durch Ihre eigene Position bestimmen lassen, sowie ein
 <b>Wie es funktioniert</b>: Mittels Daten von https://github.com/mledoze/countries und Beschleunigung durch umschliessende Rechtecke.<br/>
 &nbsp;&nbsp;&nbsp;Die möglichen Länder werden dann auf Polygone geprüft.
 ',
+	# 7.0.1
+	'mt_geo2country_api' => 'API',
+	'mt_geo2country_apiform' => 'Geo2Country API',
 ];

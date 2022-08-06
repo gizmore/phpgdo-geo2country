@@ -19,4 +19,7 @@ You can also try to detect your country via your own geoposition or pick a maps 
 <b>How it works</b>: I took https://github.com/mledoze/countries and build enclosing rectangles first.<br/>
 &nbsp;&nbsp;&nbsp;The possible matching countries are then checked against their polygons.
 ',
+	# 7.0.1
+	'mt_geo2country_api' => 'API',
+	'mt_geo2country_apiform' => 'Geo2Country API',
 ];
