@@ -19,7 +19,7 @@ final class ApiForm extends MethodForm
 	public function createForm(GDT_Form $form): void
 	{
 		$form->addFields(
-			GDT_Position::make('p')->defaultCurrent(),
+			GDT_Position::make('p')->defaultCurrent()->notNull(),
 			GDT_AntiCSRF::make(),
 		);
 		$form->actions()->addField(GDT_Submit::make());

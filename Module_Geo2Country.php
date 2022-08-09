@@ -34,7 +34,10 @@ final class Module_Geo2Country extends GDO_Module
 	    ];
 	}
     
-    public function onLoadLanguage() : void { $this->loadLanguage('lang/geo2country'); }
+    public function onLoadLanguage() : void
+    {
+    	$this->loadLanguage('lang/geo2country');
+    }
     
     public function onInitSidebar() : void
     {
