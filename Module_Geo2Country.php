@@ -41,7 +41,7 @@ final class Module_Geo2Country extends GDO_Module
     
     public function onInitSidebar() : void
     {
-        GDT_Page::instance()->topBar()->addField(
+        GDT_Page::instance()->rightBar()->addFieldFirst(
             GDT_Link::make('link_geo2ctry_try_api')->href(
                 href('Geo2Country', 'TryApi')));
     }
