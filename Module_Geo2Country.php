@@ -23,14 +23,11 @@ final class Module_Geo2Country extends GDO_Module
 	public function getDependencies() : array
 	{
 	    return [
-	    	'Admin',
-	    	'Classic',
-	    	'CountryCoordinates',
-	    	'FontAwesome',
-	    	'Login',
-	    	'News',
-	    	'Register',
-	    	'Recovery',
+	    	'Account', 'Admin',
+	    	'Classic', 'CountryCoordinates',
+	    	'FontAwesome', 'Login',
+	    	'News', 'Perf',
+	    	'Recovery', 'Register',
 	    ];
 	}
     
