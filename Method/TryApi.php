@@ -9,4 +9,5 @@ final class TryApi extends Method
     {
         return $this->templatePHP('try_api.php');
     }
+
 }

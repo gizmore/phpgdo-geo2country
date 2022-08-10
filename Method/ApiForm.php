@@ -28,7 +28,7 @@ final class ApiForm extends MethodForm
 	public function formValidated(GDT_Form $form)
 	{
 		$response = GDT_Tuple::make();
-		$response->addField(Detect::make()->withAppliedInputs($this->inputs)->execute());
+		$response->addField(Detect::make()->appliedInputs($this->getInputs())->execute());
 		$response->addField($this->renderPage());
 		return $response;
 	}
