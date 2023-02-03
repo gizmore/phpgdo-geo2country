@@ -4,15 +4,14 @@ namespace GDO\Geo2Country;
 use GDO\Core\GDO_Module;
 use GDO\UI\GDT_Link;
 use GDO\UI\GDT_Page;
-use GDO\UI\GDT_Panel;
 
 /**
  * Demo site for converting geoposition to country.
  * 
- * @link https://geo2country.gizmore.org
+ * @link https://geo2country.phpgdo.com/geo2country/tryapi
  * 
  * @author gizmore
- * @version 7.0.1
+ * @version 7.0.2
  * @since 6.6.0
  */
 final class Module_Geo2Country extends GDO_Module
@@ -24,11 +23,18 @@ final class Module_Geo2Country extends GDO_Module
 	public function getDependencies() : array
 	{
 	    return [
-	    	'Account', 'Admin',
-	    	'Classic', 'CountryCoordinates',
-	    	'FontAwesome', 'Login',
-	    	'News', 'Perf',
-	    	'Recovery', 'Register',
+	    	'Account',
+	    	'Admin',
+	    	'Classic',
+	    	'CountryCoordinates',
+	    	'CSS',
+	    	'FontAwesome',
+	    	'Javascript',
+	    	'Login',
+	    	'News',
+	    	'Perf',
+	    	'Recovery',
+	    	'Register',
 	    ];
 	}
     
