@@ -1,5 +1,6 @@
 <?php
 namespace GDO\Geo2Country\lang;
+
 return [
 	'mt_geo2country_tryapi' => 'API - Geo2C',
 	'link_geo2ctry_try_api' => 'API ausprobieren',

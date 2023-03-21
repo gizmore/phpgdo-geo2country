@@ -5,9 +5,10 @@ use GDO\Core\Method;
 
 final class TryApi extends Method
 {
-    public function execute()
-    {
-        return $this->templatePHP('try_api.php');
-    }
+
+	public function execute()
+	{
+		return $this->templatePHP('try_api.php');
+	}
 
 }
