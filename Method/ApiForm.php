@@ -1,6 +1,7 @@
 <?php
 namespace GDO\Geo2Country\Method;
 
+use GDO\Core\GDT;
 use GDO\Core\GDT_Tuple;
 use GDO\CountryCoordinates\Method\Detect;
 use GDO\Form\GDT_AntiCSRF;
@@ -27,7 +28,7 @@ final class ApiForm extends MethodForm
 		$form->actions()->addField(GDT_Submit::make());
 	}
 
-	public function formValidated(GDT_Form $form)
+	public function formValidated(GDT_Form $form): GDT
 	{
 		$response = GDT_Tuple::make();
 		$response->addField(Detect::make()->appliedInputs($this->getInputs())->execute());
