@@ -19,7 +19,7 @@ use GDO\Maps\GDT_Position;
 final class ApiForm extends MethodForm
 {
 
-	public function createForm(GDT_Form $form): void
+	protected function createForm(GDT_Form $form): void
 	{
 		$form->addFields(
 			GDT_Position::make('p')->initialCurrent()->notNull(),
