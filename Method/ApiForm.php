@@ -19,6 +19,11 @@ use GDO\Maps\GDT_Position;
 final class ApiForm extends MethodForm
 {
 
+    public function isUserRequired(): bool
+    {
+        return false;
+    }
+
 	protected function createForm(GDT_Form $form): void
 	{
 		$form->addFields(
